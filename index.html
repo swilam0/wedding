@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>حفل زفاف محمد ووعد</title>
+
+  <!-- Google Fonts - Arabic Decorative -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Aref+Ruqaa:wght@400;700&family=Rakkas&family=Katibeh&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== INTRO / SPLASH SCREEN ===== -->
+  <div id="intro">
+    <canvas id="intro-canvas"></canvas>
+    <div id="intro-content">
+      <div class="intro-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+      <div class="intro-rings">
+        <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 55px; height: 55px;">
+          <circle cx="26" cy="38" r="16" />
+          <circle cx="38" cy="38" r="16" />
+          <path d="M26,22 L30,16 L26,10 L22,16 Z" fill="url(#goldLeafGrad)" />
+        </svg>
+      </div>
+      <div class="intro-names">مُحَمدْ و وَعدْ</div>
+      <div class="intro-tagline">يدعوانكم لمشاركتهم فرحتهم</div>
+      <div class="intro-loader">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content" class="hidden">
+
+    <!-- Global SVG Defs for Golden Leaves -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+      <defs>
+        <linearGradient id="goldLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#f5e8c0" />
+          <stop offset="35%" stop-color="#e8c96a" />
+          <stop offset="70%" stop-color="#c9a84c" />
+          <stop offset="100%" stop-color="#9a7830" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- Floating Gold Leaves Container -->
+    <div id="gold-leaves-container" aria-hidden="true"></div>
+
+    <!-- ===== SECTION 1: HERO ===== -->
+    <section id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-bismillah reveal">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+        <div class="hero-divider reveal">✦ ✦ ✦</div>
+        <div class="hero-invite-text reveal">يسعدنا دعوتكم لحضور حفل زفاف</div>
+        <h1 class="hero-names reveal">
+          <span class="name-groom">مُحَمدْ</span>
+          <span class="hero-and">و</span>
+          <span class="name-bride">وَعدْ</span>
+        </h1>
+        <div class="hero-divider reveal">— ✦ —</div>
+        <div class="hero-date reveal" id="hero-date">٤ أبريل ٢٠٢٧</div>
+        <div class="hero-venue reveal" id="hero-venue">قاعة اللؤلؤة — بلبيس</div>
+        <div class="hero-scroll-hint reveal">
+          <span>تمرر للأسفل</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 2: LOVE STORY ===== -->
+    <section id="story" class="section">
+      <div class="section-ornament top">❧</div>
+      <div class="section-header reveal">
+        <h2 class="section-title">قصتنا</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="story-quote reveal">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">
+          في لحظة نظرت فيها إليكِ، عرفت أن الله أكمل نصفي بكِ..
+          اليوم نبدأ معاً فصلاً جديداً، حروفه الحب، وأسطره الأيام،
+          ونهايته الجنة إن شاء الله
+        </p>
+        <div class="quote-author">
+          — محمد 
+          <svg class="gold-icon inline-icon" viewBox="0 0 24 24" fill="url(#goldLeafGrad)"><path d="M12,21.35 L10.55,20.03 C5.4,15.36 2,12.28 2,8.5 C2,5.42 4.42,3 7.5,3 C9.24,3 10.91,3.81 12,5.09 C13.09,3.81 14.76,3 16.5,3 C19.58,3 22,5.42 22,8.5 C22,12.28 18.6,15.36 13.45,20.03 L12,21.35 Z" /></svg>
+        </div>
+        <div class="quote-mark close">"</div>
+      </div>
+
+      <div class="story-timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot">✦</div>
+          <div class="timeline-content">
+            <div class="timeline-label">أول لقاء</div>
+            <div class="timeline-desc">كانت البداية</div>
+          </div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width: 22px; height: 22px;">
+              <circle cx="26" cy="38" r="16" />
+              <circle cx="38" cy="38" r="16" />
+              <path d="M26,22 L30,16 L26,10 L22,16 Z" fill="url(#goldLeafGrad)" />
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-label">الخطوبة</div>
+            <div class="timeline-desc">وعد وميثاق</div>
+          </div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2.2" stroke-linejoin="round" style="width: 22px; height: 22px;">
+              <path d="M8,48 L56,48 L50,24 L38,36 L32,16 L26,36 L14,24 Z" />
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-label">الزواج</div>
+            <div class="timeline-desc">بداية العمر</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-ornament bottom">❧</div>
+    </section>
+
+    <!-- ===== SECTION 3: AGENDA ===== -->
+    <section id="agenda" class="section section-dark">
+      <div class="section-header reveal">
+        <h2 class="section-title">أجندة الحفل</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="agenda-list">
+        <div class="agenda-item reveal">
+          <div class="agenda-icon">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2" stroke-linecap="round" style="width: 32px; height: 32px;">
+              <path d="M32,12 C28,12 24,16 26,22 C28,28 36,28 38,22 C40,16 36,12 32,12 Z" />
+              <path d="M32,8 C22,8 18,20 24,28 C30,36 34,36 40,28 C46,20 42,8 32,8 Z" />
+              <path d="M32,32 C32,45 32,54 32,56" />
+              <path d="M32,40 Q24,38 22,44 Q28,46 32,42" />
+              <path d="M32,46 Q40,44 42,50 Q36,52 32,48" />
+            </svg>
+          </div>
+          <div class="agenda-time">7:00 م</div>
+          <div class="agenda-label">استقبال الضيوف</div>
+        </div>
+        <div class="agenda-item reveal">
+          <div class="agenda-icon">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px;">
+              <path d="M12,52 L12,28 C12,18 20,10 32,10 C44,10 52,18 52,28 L52,52" />
+              <path d="M20,52 L20,32 C20,26 26,22 32,22 C38,22 44,26 44,32 L44,52" />
+              <path d="M28,52 L28,42 C28,40 30,38 32,38 C34,38 36,40 36,42 L36,52" />
+              <path d="M6,52 L58,52" />
+            </svg>
+          </div>
+          <div class="agenda-time">8:00 م</div>
+          <div class="agenda-label">كتب الكتاب</div>
+        </div>
+        <div class="agenda-item reveal">
+          <div class="agenda-icon">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px;">
+              <path d="M14,40 C14,24 22,16 32,16 C42,16 50,24 50,40" />
+              <circle cx="32" cy="12" r="3" />
+              <path d="M8,44 L56,44 A2,2 0 0 1 58,46 L58,48 A2,2 0 0 1 56,50 L8,50 A2,2 0 0 1 6,48 L6,46 A2,2 0 0 1 8,44 Z" />
+            </svg>
+          </div>
+          <div class="agenda-time">9:00 م</div>
+          <div class="agenda-label">العشاء</div>
+        </div>
+        <div class="agenda-item reveal">
+          <div class="agenda-icon">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px;">
+              <rect x="12" y="38" width="40" height="14" rx="3" />
+              <rect x="18" y="24" width="28" height="14" rx="2" />
+              <path d="M32,14 Q32,10 34,14 C36,18 32,24 32,24" />
+              <path d="M26,38 C28,32 36,32 38,38" />
+              <path d="M20,24 C22,18 28,18 30,24" />
+            </svg>
+          </div>
+          <div class="agenda-time">10:00 م</div>
+          <div class="agenda-label">قطع الكيكة</div>
+        </div>
+        <div class="agenda-item reveal">
+          <div class="agenda-icon">
+            <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 32px; height: 32px;">
+              <path d="M32,8 Q32,24 16,24 Q32,24 32,40 Q32,24 48,24 Q32,24 32,8 Z" fill="url(#goldLeafGrad)" />
+              <path d="M48,36 Q48,44 40,44 Q48,44 48,52 Q48,44 56,44 Q48,44 48,36 Z" fill="url(#goldLeafGrad)" />
+            </svg>
+          </div>
+          <div class="agenda-time">10:30 م</div>
+          <div class="agenda-label">ختام الحفل</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: LOCATION ===== -->
+    <section id="location" class="section">
+      <div class="section-header reveal">
+        <h2 class="section-title">موقع الحفل</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="location-card reveal">
+        <div class="location-icon">
+          <svg class="gold-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px;">
+            <path d="M32,8 C21,8 14,15 14,26 C14,39 32,56 32,56 C32,56 50,39 50,26 C50,15 43,8 32,8 Z" />
+            <circle cx="32" cy="24" r="6" />
+          </svg>
+        </div>
+        <div class="location-name" id="location-name">قاعة اللؤلؤة</div>
+        <div class="location-city" id="location-city">بلبيس — محافظة الشرقية</div>
+        <a
+          href="https://maps.google.com/?q=قاعة+اللؤلؤة+بلبيس"
+          target="_blank"
+          class="map-btn"
+          rel="noopener"
+        >
+          افتح في خرائط جوجل <svg class="gold-icon inline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.1rem; height: 1.1rem; vertical-align: middle; margin-right: 4px;"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z" /><path d="M9 3v15M15 6v15" /></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: WISHES ===== -->
+    <section id="wishes" class="section section-dark">
+      <div class="section-header reveal">
+        <h2 class="section-title">أكتب تهنئتك</h2>
+        <div class="gold-line"></div>
+        <p class="section-subtitle">شاركنا فرحتك بكلمة من قلبك</p>
+      </div>
+
+      <div class="wish-form reveal">
+        <input
+          type="text"
+          id="wish-name"
+          placeholder="اسمك"
+          maxlength="50"
+          autocomplete="off"
+        />
+        <textarea
+          id="wish-text"
+          placeholder="اكتب تهنئتك هنا..."
+          maxlength="300"
+          rows="4"
+        ></textarea>
+        <button id="wish-submit" onclick="submitWish()">
+          <span id="wish-btn-text">
+            أرسل تهنئتك 
+            <svg class="gold-icon inline-icon" viewBox="0 0 24 24" fill="currentColor" style="color: var(--bg-dark); vertical-align: middle; margin-right: 4px;"><path d="M12,21.35 L10.55,20.03 C5.4,15.36 2,12.28 2,8.5 C2,5.42 4.42,3 7.5,3 C9.24,3 10.91,3.81 12,5.09 C13.09,3.81 14.76,3 16.5,3 C19.58,3 22,5.42 22,8.5 C22,12.28 18.6,15.36 13.45,20.03 L12,21.35 Z" /></svg>
+          </span>
+        </button>
+        <div id="wish-success" class="wish-success hidden">
+          شكراً لكم! تهنئتكم وصلت 
+          <svg class="gold-icon inline-icon" viewBox="0 0 64 64" fill="none" stroke="url(#goldLeafGrad)" stroke-width="2" stroke-linecap="round" style="width: 16px; height: 16px;"><path d="M32,12 C28,12 24,16 26,22 C28,28 36,28 38,22 C40,16 36,12 32,12 Z" /><path d="M32,8 C22,8 18,20 24,28 C30,36 34,36 40,28 C46,20 42,8 32,8 Z" /><path d="M32,32 L32,56" /></svg>
+        </div>
+      </div>
+
+      <div class="wishes-display reveal">
+        <h3 class="wishes-display-title">تهانٍ من أحبائنا</h3>
+        <div id="wishes-list">
+          <div class="wish-loading">جاري تحميل التهاني...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-names">محمد و وعد</div>
+      <div class="footer-date" id="footer-date">٤ أبريل ٢٠٢٧</div>
+      <div class="footer-dua">
+        بارك الله لهما وبارك عليهما وجمع بينهما في خير 
+        <svg class="gold-icon inline-icon" viewBox="0 0 24 24" fill="url(#goldLeafGrad)"><path d="M12,21.35 L10.55,20.03 C5.4,15.36 2,12.28 2,8.5 C2,5.42 4.42,3 7.5,3 C9.24,3 10.91,3.81 12,5.09 C13.09,3.81 14.76,3 16.5,3 C19.58,3 22,5.42 22,8.5 C22,12.28 18.6,15.36 13.45,20.03 L12,21.35 Z" /></svg>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Firebase -->
+  <script type="module" src="firebase.js"></script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
