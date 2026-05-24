@@ -5,11 +5,11 @@
 
 // ===== CONFIG (سهل التعديل) =====
 const CONFIG = {
-  date: '٤ أبريل ٢٠٢٧',
-  dateRaw: '2027-04-04',
-  venue: 'قاعة اللؤلؤة',
-  city: 'بلبيس — محافظة الشرقية',
-  mapsUrl: 'https://maps.google.com/?q=قاعة+اللؤلؤة+بلبيس',
+  date: '5 أغسطس 2026 ',
+  dateRaw: '2026-08-05',
+  venue: 'قاعة الجوهرة',
+  city: 'مشتول السوق — محافظة الشرقية',
+  mapsUrl: 'https://maps.google.com/?q=قاعة+الجوهرة+مشتول+السوق',
   introDuration: 3200, // ms
 };
 
